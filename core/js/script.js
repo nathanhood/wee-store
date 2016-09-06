@@ -1,5 +1,3 @@
-/* global Number */
-
 Wee.fn.make('store', {
 	_construct: function() {
 		this.$private.addNaNPolyfill();
@@ -35,6 +33,7 @@ Wee.fn.make('store', {
 		return val;
 	},
 	drop: function(key) {
+		// TODO: Finish
 		var priv = this.$private,
 			segments = key.toString().split('.'),
 			mainKey  = segments.shift(),
@@ -55,6 +54,7 @@ Wee.fn.make('store', {
 	}
 }, {
 	drop: function(root, key, val) {
+		// TODO: Finish
 		Array.isArray(root) ?
 			root.splice(key, 1) :
 			delete root[key];
