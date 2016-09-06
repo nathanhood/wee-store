@@ -1,0 +1,25 @@
+{
+	"name": "Wee Store",
+	"version": "0.1.0",
+	"description": "Interface for local and session storage.",
+	"homepage": "https://www.weepower.com",
+	"author": "Nathan - Caddis",
+	"autoload": true,
+	"data": {
+
+	},
+	"style": {
+		"build": [
+			"css/variables.less",
+			"css/screen.less"
+		]
+	},
+	"script": {
+		"build": [
+			"js/script.js"
+		]
+	},
+	"dependencies": {
+		"wee": "^3.0.0"
+	}
+}
